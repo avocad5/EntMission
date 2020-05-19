@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mission</title>
+    <style media="screen">
+      img{
+        width: 200px;
+        display: table; margin-left: auto; margin-right: auto;
+      }
+      .dd{
+        width:700px;
+        margin-top: 0;
+      }
+      .back{
+        margin-top: 7px;
+        background-color: #C0C0C0
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dd">
+      <a href="index.html"><button type="button" class="back" style="float:left">back</button></a>
+      <img src="logo.png">
+    </div>
+
+    <script type="text/javascript">
+      var title=['1부터 1000까지 모두더하면?','피보나치수열','두 수의 최대공약수','두 수의 최소공배수','소인수분해','100번째 소수','a의 b제곱','피타고라스수','원주율구하기','쉬어가기']
+      document.write('<style media="screen">span{display:inline-block; width:30px; height:30px; border-radius:15px; text-align:center; font-size:20px; background-color:#FF6287; margin-right:15px;}div{display:table; margin-left:auto; margin-right:auto; text-align:left; margin-top:50px;}button{width:60px; height:30px; border:none; border-radius:5px; background-color:#FF174D; font-size:15px; margin-bottom:20px; float:right;transition-duration: 0.2s;outline:none;color:white;}</style>')
+      document.write('<style media="screen">button:hover{-webkit-transform: scale(1.1);transition-duration: 0.2s;</style>')
+      document.write('<div class="mission">')
+      for(var i=1;i<=title.length;i++){
+        document.write('<span>'+i+'</span>')
+        document.write(title[i-1])
+        document.write('<a href=' +i+ '.html><button type="button">start</button></a>')
+        document.write('<hr width="700px;"><br>')
+      }
+      document.write('</div>')
+    </script>
+
+  </body>
+</html>

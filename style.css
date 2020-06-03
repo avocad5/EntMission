@@ -21,6 +21,7 @@ button{
   margin-right: 10px;
   border: none;
   font-size: 15px;
+  cursor: pointer;
 }
 #one{
   background-color: #FF6287;
